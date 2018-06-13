@@ -1,0 +1,13 @@
+{
+  "debug": true,
+  "XHRCache": false,
+  "modules": [
+    "support",
+    "require",
+    "ui",
+    "statemanager",
+    "mediamanager",
+    "gameloop",
+    "physics"
+  ]
+}

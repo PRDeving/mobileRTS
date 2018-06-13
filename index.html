@@ -1,0 +1,51 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <style>
+
+    @media screen and (orientation:portrait) {
+      canvas {
+        display: none;
+      }
+      #portrait {
+        display: hidden;
+      }
+    }
+
+    @media screen and (orientation:landscape) {
+      canvas {
+        display: hidden;
+      }
+      #portrait {
+        display: none;
+      }
+    }
+
+    html {
+      overflow: hidden;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    canvas {
+      border: 1px solid black;
+    }
+    #portrait {
+      background: white;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="portrait">
+    <h1>Landscape and refresh</h1>
+  </div>
+  <canvas id="myCanvas"></canvas>
+  <script src="PlayJS/engine.js" app="app.js" config="config.json"></script>
+</body>
